@@ -51,7 +51,8 @@ const BestSellingCourses = () => {
   const [selectedCategory, setSelectedCategory] = useState('UI/UX Design');
 
   return (
-    <section className="bg-gray-100 px-6 md:px-16 py-20 text-gray-800">
+    <section className="bg-white px-6 md:px-16 py-20 text-gray-800">
+      <h2 className="text-3xl md:text-2xl text-blue-400 text-center "> Our  class</h2>
       <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Best Selling Class</h2>
 
       {/* Category  */}
@@ -86,13 +87,17 @@ const BestSellingCourses = () => {
             />
             <div className="p-4 space-y-2">
               <h3 className="font-semibold text-lg">{course.title}</h3>
-              <p className="text-sm text-gray-600">
-                {course.lessons} • {course.duration}
-              </p>
-              <p className="text-blue-600 font-bold">{course.price}</p>
-              <div className="flex items-center gap-1 text-yellow-500 text-sm">
-                <FaStar />
+              <div className="text-sm text-gray-600 flex justify-between">
+                <p> {course.lessons}</p>
+                
+                 <p>{course.duration}</p> 
+              </div>
+              <div className='flex justify-between'>
+              <p className=" font-bold">{course.price}</p>
+              <div className="flex items-center gap-1 text-sm">
+                <FaStar  className='text-yellow-500 '/>
                 <span>{course.rating}</span>
+              </div>
               </div>
             </div>
           </div>

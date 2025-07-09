@@ -21,6 +21,7 @@ import About from '../components/aboutUs'
 import Stats from '../components/stats'
 import Course from '../components/bestSellingCourse'
 import Testimonials from '../components/testimonials'
+import Footer from '../components/footer'
 
 const Landing1 = () => {
   return (
@@ -32,6 +33,7 @@ const Landing1 = () => {
       <Stats/>
       <Course/>
       <Testimonials />
+      <Footer/>
 
     </div>
   );

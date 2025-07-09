@@ -18,10 +18,10 @@ const AboutUs = () => {
           />
         </div>
         {/* Left Text */}
-        <div className="w-full lg:w-1/2 space-y-9">
-          <h2 className="text-3xl md:text-4xl font-bold">About Us</h2>
-          <h3 className="text-xl font-semibold">E-Learning Platform for Digital Skills</h3>
-          <p className="text-gray-600 text-base leading-relaxed">
+        <div className="w-full lg:w-1/2 space-y-3 ">
+          <h2 className="text-3xl md:text-2xl text-blue-400">About Us</h2>
+          <h3 className="text-3xl font-semibold mb-20 ">E-Learning Platform for Digital Skills</h3>
+          <p className="text-gray-600 text-xl leading-relaxed ">
            Empower yourself with the knowledge and skills gained through online education! The key to your future! Empower yourself with the knowledge and skills gained through online education! The key to your future!
           </p>
           <Link
