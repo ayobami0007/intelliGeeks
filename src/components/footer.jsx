@@ -5,94 +5,84 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube, FaEnvelop
 const Footer = () => {
   return (
     <footer className="text-white">
-      {/* Top CTA Section */}
-      <div className="bg-black px-6 md:px-16 py-12 text-center flex">
-        <h2 className="text-2xl md:text-3xl font-bold">
+
+      <div className="bg-black px-6 md:px-16 py-12 flex flex-col gap-6 md:gap-0 md:flex-row items-center justify-between">
+        <h2 className="text-2xl md:text-4xl font-bold md:w-1/2 text-center md:text-left">
           Join the world’s largest online learning platform
         </h2>
-        {/* <form className="flex flex-col sm:flex-row justify-center bg-red-300 items-center gap-4 max-w-xl mx-auto">
-          <input
-            type="email"
-            placeholder="name@email.com"
-            className="w-full sm:flex-1 px-4 py-2 rounded text-black"
-          />
+
+        <form
+          className="w-full md:w-[400px] bg-gray-300 flex items-center justify-between px-2 py-2 rounded-xl mx-auto"
+          onSubmit={(e) => e.preventDefault()}
+        >
+          <div className="flex items-center flex-grow">
+            <FaEnvelope className="text-gray-600 ml-3 mr-2" />
+            <input
+              type="email"
+              placeholder="name@email.com"
+              className="bg-transparent outline-none text-sm text-gray-700 w-full placeholder:text-gray-500"
+              required
+            />
+          </div>
           <button
             type="submit"
-            className="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded transition"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 text-sm text-nowrap font-medium rounded-sm transition-all duration-200"
           >
             Join now
           </button>
-        </form> */}
-            <div className="flex items-center bg-gray-300 px-4 py-2 rounded-md max-w-md mx-auto">
-      {/* Envelope Icon */}
-      <FaEnvelope className="text-gray-700 text-lg mr-3" />
-
-      {/* Email Input */}
-      <input
-        type="email"
-        placeholder="name@email.com"
-        className="flex-grow bg-transparent outline-none text-sm text-gray-800 placeholder-gray-600"
-      />
-
-      {/* Join Now Button */}
-      <button className="bg-blue-600 text-white text-sm px-4 py-2 rounded-md hover:bg-blue-700 transition">
-        Join now
-      </button>
-    </div>
+        </form>
       </div>
 
-      
 
-     
-      <div className=" flex bg-blue-700 flex-col md:flex-row text-white px-6 md:px-16 py-16 justify-between w-full ">
-        
-        <div>
 
-          <p className="text-xl text-white/80">
-           Unlock Digital Mastery Effortlessly! <br/>Explore and enhance your skills<br/> with our user-friendly platform.
+
+
+      <div className="flex flex-col md:flex-row bg-blue-700 text-white px-6 md:px-16 py-16 w-full gap-10 md:gap-50 justify-between">
+
+        <div className="md:w-1/2">
+          <p className="text-lg md:text-xl text-white/80 leading-relaxed">
+            Unlock Digital Mastery Effortlessly! <br />
+            Explore and enhance your skills with our user-friendly platform.
           </p>
         </div>
-         
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10  ">
-       
-        <div>
-          <h4 className=" text-4xl mb-4">Quick links</h4>
-          <ul className="space-y-2 text-xl text-white/80">
-            <li><a href="#" className="hover:underline">About us</a></li>
-            <li><a href="#" className="hover:underline">Our Class</a></li>
-            <li><a href="#" className="hover:underline">Blog</a></li>
-            <li><a href="#" className="hover:underline">Contact</a></li>
-          </ul>
-        </div>
 
-    
-        <div>
-          <h4 className="text-4xl mb-4">Resources</h4>
-          <ul className="space-y-2 text-xl text-sm text-white/80">
-            <li><a href="#" className="hover:underline">Support</a></li>
-            <li><a href="#" className="hover:underline">Privacy policy</a></li>
-            <li><a href="#" className="hover:underline">Terms & Conditions</a></li>
-          </ul>
-        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 w-full">
 
-        
-        <div>
-          <h4 className="text-4xl mb-4">Social media</h4>
-          <div className="flex gap-4 text-white text-lg">
-            <a href="#" className="hover:text-gray-300"><FaFacebookF /></a>
-            <a href="#" className="hover:text-gray-300"><FaTwitter /></a>
-            <a href="#" className="hover:text-gray-300"><FaInstagram /></a>
-            <a href="#" className="hover:text-gray-300"><FaLinkedinIn /></a>
-            <a href="#" className="hover:text-gray-300"><FaYoutube /></a>
+          <div>
+            <h4 className="text-xl font-semibold mb-4">Quick Links</h4>
+            <ul className="space-y-2 text-white/80">
+              <li><a href="#" className="hover:underline">About Us</a></li>
+              <li><a href="#" className="hover:underline">Our Class</a></li>
+              <li><a href="#" className="hover:underline">Blog</a></li>
+              <li><a href="#" className="hover:underline">Contact</a></li>
+            </ul>
           </div>
-        </div>  
-         
-        </div>
 
-       
+
+          <div>
+            <h4 className="text-xl font-semibold mb-4">Resources</h4>
+            <ul className="space-y-2 text-white/80">
+              <li><a href="#" className="hover:underline">Support</a></li>
+              <li><a href="#" className="hover:underline">Privacy Policy</a></li>
+              <li><a href="#" className="hover:underline">Terms & Conditions</a></li>
+            </ul>
+          </div>
+
+
+          <div>
+            <h4 className="text-xl font-semibold mb-4">Social Media</h4>
+            <div className="flex gap-4 text-lg">
+              <a href="#" className="hover:text-gray-300"><FaFacebookF /></a>
+              <a href="#" className="hover:text-gray-300"><FaTwitter /></a>
+              <a href="#" className="hover:text-gray-300"><FaInstagram /></a>
+              <a href="#" className="hover:text-gray-300"><FaLinkedinIn /></a>
+              <a href="#" className="hover:text-gray-300"><FaYoutube /></a>
+            </div>
+          </div>
+        </div>
       </div>
- 
-     </footer>
+
+    </footer>
   );
 };
 

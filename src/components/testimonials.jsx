@@ -29,8 +29,7 @@ const testimonials = [
 const StudentTestimonials = () => {
   return (
     <section className="bg-gray-50 px-6 md:px-16 py-20 text-gray-800">
-      <h2 className="text-3xl md:text-2xl text-blue-400 text-center ">Testimonials</h2>
-      {/* <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Best Selling Class</h2> */}
+      <h2 className="text-3xl md:text-2xl text-blue-400 text-center mb-2">Testimonials</h2>
       <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Student Testimonials</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -40,19 +39,19 @@ const StudentTestimonials = () => {
                <img
               src={t.image}
               alt={t.name}
-              className=" w-16 rounded-t-xl"
+              className="  rounded-t-xl"
             />
             <div>
-              <h3 className="font-semibold">{t.name}</h3>
-            <p className="text-sm text-gray-600 italic mb-1">{t.field}</p>
+              <h3 className="font-semibold text-xl">{t.name}</h3>
+            <p className="text-base text-gray-600 italic mb-1">{t.field}</p>
 
-              <div className="flex items-center gap-1  text-sm">
+              <div className="flex items-center gap-1  text-xl">
                 <FaStar  className='text-yellow-500'/>
                 <span>{t.rating}</span>
               </div>
               </div>
             </div>
-            <p className="text-sm text-gray-700 mt-4">{t.text}</p>
+            <p className="text-base text-gray-700 mt-4">{t.text}</p>
           </div>
         ))}
       </div>

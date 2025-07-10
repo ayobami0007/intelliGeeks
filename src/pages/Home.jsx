@@ -1,16 +1,4 @@
-// import React from 'react'
-// import Navbar from '../components/navBar'
-// import Hero from '../components/heroLand'
-// const Landing1 = () => {
-//   return (
-//     <div>
-//         <Navbar/>
-//         <Hero/>
-//     </div>
-//   )
-// }
 
-// export default Landing1
 
 
 import React from 'react';

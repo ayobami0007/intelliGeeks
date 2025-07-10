@@ -51,18 +51,18 @@ const BestSellingCourses = () => {
   const [selectedCategory, setSelectedCategory] = useState('UI/UX Design');
 
   return (
-    <section className="bg-white px-6 md:px-16 py-20 text-gray-800">
-      <h2 className="text-3xl md:text-2xl text-blue-400 text-center "> Our  class</h2>
-      <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Best Selling Class</h2>
+    <section className="bg-white px-6 md:px-16 py-14 text-gray-800" id="our-class">
+      <h2 className="text-3xl md:text-2xl text-blue-400 text-center mb-2 "> Our  class</h2>
+      <h2 className="text-3xl md:text-4xl text-blue-400 font-bold mb-12 text-center">Best Selling Class</h2>
 
       {/* Category  */}
       <div  className="flex justify-center">
-      <div className="inline-flex flex-wrap py-1 rounded-full items-center justify-center px-3 bg-gray-200 flex-wrap gap-4 mb-10">
+      <div className="inline-flex flex-wrap py-1 rounded-full items-center justify-center px-3 bg-gray-200 flex-wrap gap-4 mb-16">
         {categories.map((cat) => (
           <button
             key={cat}
             onClick={() => setSelectedCategory(cat)}
-            className={`px-4 py-2  text-sm font-medium transition ${
+            className={`px-4 py-2  text-2xl font-medium transition ${
               selectedCategory === cat
                 ? 'bg-white  rounded-full'
                 : 'text-gray-700  hover:rounded'
@@ -73,7 +73,7 @@ const BestSellingCourses = () => {
         ))}
       </div>
 </div>
-      {/* Course Cards */}
+      {/*  Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {courses[selectedCategory].map((course, i) => (
           <div
@@ -86,15 +86,15 @@ const BestSellingCourses = () => {
               className="w-full rounded-t-xl"
             />
             <div className="p-4 space-y-2">
-              <h3 className="font-semibold text-lg">{course.title}</h3>
+              <h3 className="font-semibold text-2xl">{course.title}</h3>
               <div className="text-sm text-gray-600 flex justify-between">
                 <p> {course.lessons}</p>
                 
                  <p>{course.duration}</p> 
               </div>
               <div className='flex justify-between'>
-              <p className=" font-bold">{course.price}</p>
-              <div className="flex items-center gap-1 text-sm">
+              <p className="text-xl font-bold">{course.price}</p>
+              <div className="flex items-center gap-1 text-xl">
                 <FaStar  className='text-yellow-500 '/>
                 <span>{course.rating}</span>
               </div>

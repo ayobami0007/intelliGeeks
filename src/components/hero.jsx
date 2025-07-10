@@ -4,7 +4,7 @@
 //   return (
 //     <div>
 //         <section className="px-6 py-10 flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
-//   {/* Left Text */}
+//  
 //   <div className="lg:w-1/2 text-center lg:text-left">
 //     <h1 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] leading-tight">
 //       Master Digital Skills<br />with Ease!
@@ -66,7 +66,7 @@ const Hero = () => {
     // <section className="px-6 md:px-12 lg: py-10 flex flex-col-reverse lg:flex-row items-center justify-between gap-140 bg-[#F9FAFB]">
 <section className=" bg-red-500 px-6 md:px-8   flex flex-col-reverse lg:flex-row md:justify-between bg-[#F9FAFB]">
 
-    {/* LEFT SIDE */}
+    {/* LEFT */}
       <div className="lg:w-1/2 text-center lg:text-left bg-red-300">
         <h1 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] leading-tight">
           Master Digital Skills <br className="hidden md:block" /> with Ease!
@@ -77,7 +77,7 @@ const Hero = () => {
           with our user-friendly platform.
         </p>
 
-        {/*  Total Students */}
+     
         <div className="mt-6 flex items-center justify-center lg:justify-start gap-4">
           <div className="flex -space-x-3">
             <img src={student1} alt="student" className="w-6 h-6 rounded-full border-2 border-white" />
@@ -110,7 +110,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* RIGHT SIDE */}
+      {/* RIGHT */}
       <div className="relative  bg-red-900">
         <img src={woman} alt="Instructor" className="w-full max-w-sm mx-auto lg:mx-0 rounded-xl" />
 
