@@ -10,7 +10,7 @@ const FaqItem = ({ question, answer }) => {
     >
       <button
         onClick={() => setOpen(!open)}
-        className="w-full flex items-center justify-between px-4 py-4 text-left font-medium text-gray-800 hover:bg-blue-50 transition"
+        className="w-full flex items-center justify-between font-medium text-gray-800 px-4 py-4 text-left  hover:bg-blue-50 transition"
       >
         <span className="text-sm md:text-xl">{question}</span>
         <span className="text-blue-600 text-lg">

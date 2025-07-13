@@ -52,12 +52,12 @@ const BestSellingCourses = () => {
 
   return (
     <section className="bg-white px-6 md:px-16 py-14 text-gray-800" id="our-class">
-      <h2 className="text-3xl md:text-2xl text-blue-400 text-center mb-2 "> Our  class</h2>
-      <h2 className="text-3xl md:text-4xl text-blue-400 font-bold mb-12 text-center">Best Selling Class</h2>
+      <h2 className="text-3xl  text-center mb-2 md:text-2xl text-blue-400 "> Our  class</h2>
+      <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-blue-400 ">Best Selling Class</h2>
 
       {/* Category  */}
       <div  className="flex justify-center">
-      <div className="inline-flex flex-wrap py-1 rounded-full items-center justify-center px-3 bg-gray-200 flex-wrap gap-4 mb-16">
+      <div className="inline-flex flex-wrap py-1 rounded-full px-3 bg-gray-200 flex-wrap  items-center justify-center gap-4 mb-16">
         {categories.map((cat) => (
           <button
             key={cat}
@@ -74,7 +74,7 @@ const BestSellingCourses = () => {
       </div>
 </div>
       {/*  Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 ">
         {courses[selectedCategory].map((course, i) => (
           <div
             key={i}

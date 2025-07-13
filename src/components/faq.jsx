@@ -23,10 +23,10 @@ const faqData = [
 const FaqSection = () => {
   return (
     <section className="bg-blue-50 px-6 md:px-16 py-16">
-      <p className="text-center text-blue-600 text-base mb-2 uppercase tracking-wide">
+      <p className="text-center text-blue-600  tracking-wide text-base mb-2 uppercase">
         Ask your questions
       </p>
-      <h2 className="text-2xl md:text-[40px] font-bold text-center text-gray-900 mb-10">
+      <h2 className="text-2xl md:text-[40px] text-gray-900 mb-10 font-bold text-center ">
         Frequently Asked Questions
       </h2>
 

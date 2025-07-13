@@ -10,8 +10,23 @@ import Stats from '../components/stats'
 import Course from '../components/bestSellingCourse'
 import Testimonials from '../components/testimonials'
 import Footer from '../components/footer'
+import { useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 
-const Landing1 = () => {
+
+const Home = () => {
+
+   const location = useLocation();
+  const ourClassRef = useRef(null);
+  
+  useEffect(() => {
+    if (location.state?.scrollTo === 'our-class') {
+      setTimeout(() => {
+        ourClassRef.current?.scrollIntoView({ behavior: 'smooth' });
+      }, 100); 
+    }
+  }, [location]);
+
   return (
     <div>
       <Navbar />
@@ -19,7 +34,9 @@ const Landing1 = () => {
       <Choose />
       <About/>
       <Stats/>
-      <Course/>
+       <div ref={ourClassRef}>
+        <Course /> 
+      </div>
       <Testimonials />
       <Footer/>
 
@@ -27,4 +44,4 @@ const Landing1 = () => {
   );
 };
 
-export default Landing1;
+export default Home;
