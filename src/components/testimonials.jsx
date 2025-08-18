@@ -12,13 +12,6 @@ const testimonials = [
   },
   {
     image: testImage,
-    name: 'Chinedu Okafor',
-    field: 'Mobile Development',
-    rating: 4.8,
-    text: 'The hands-on approach and real-world projects made learning mobile development enjoyable. I landed my first job thanks to IntelliGeeks!',
-  },
-  {
-    image: testImage,
     name: 'Fatima Yusuf',
     field: 'Computational Thinking and Introduction to AI',
     rating: 5.0,

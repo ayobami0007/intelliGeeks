@@ -13,7 +13,7 @@ const team = () => {
   return (
     <section className="px-6 md:px-16 py-16 bg-white text-center">
       <div className="mb-12">
-        <div className="text-2xl font-medium mb-2">— Our Team</div>
+        <div className="text-2xl text-blue-500 font-medium mb-2">— Our Team</div>
         <h2 className="text-2xl md:text-4xl font-bold text-gray-800">
           Empowering learners through passion, expertise, and collaboration.
         </h2>
