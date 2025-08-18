@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../components/navBar'
-import aboutImage from '../assets/aboutImg.svg';
+import aboutImage from '../assets/aboutImg.png';
 import Stats from '../components/stats.jsx'
 import OurClass from '../components/whyChooseUs.jsx'
 import Team from '../components/team.jsx'
@@ -19,6 +19,7 @@ const AboutUs = () => {
                 <img
                   src={aboutImage}
                   alt="About us illustration"
+                
                   className="w-full h-auto object-contain"
                 />
               </div>

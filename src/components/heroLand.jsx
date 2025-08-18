@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 import personImage from "../assets/bg.png";
 import emailjs from "@emailjs/browser";
-import { FaFileDownload } from "react-icons/fa";
-import google from "../assets/googleLogo.png";
-import canva from "../assets/canvaLogo.png";
-import amazon from "../assets/amazonLogo.png";
-import sketch from "../assets/sketchLogo.png";
 import { FaArrowRight } from "react-icons/fa";
 import { useRef } from "react";
 import PopupBanner from "../components/popUp.jsx";
@@ -60,14 +55,17 @@ const HeroSection = () => {
             <h1 className="text-3xl md:text-[42px] font-bold leading-tight">
               Build the Future. Learn <br /> AI Today.
             </h1>
-            <p className="text-base">
-              A beginner-friendly program designed to teach you the{" "}
-              <br className="hidden md:inline" /> fundamentals of artificial
-              intelligence and software <br className="hidden md:inline" />{" "}
-              development through practical, project-based learning.
-            </p>
-            <div className="text-2xl font-semibold">
-              Live Interactive Classes
+         
+            <div className="my-30"></div>
+          
+            <div className="text-3xl font-semibold">
+              Interactive Classes Led by Industry Experts
+            </div>
+            <div className="text-3xl font-semibold">
+              Trusted by 100+ Parents.
+            </div>
+            <div className="text-3xl font-semibold">
+              Over 500 students enrolled.
             </div>
             {/* <button className=" inline-flex  bg-white text-black rounded px-6 py-2  hover:bg-gray-200 transition items-center">
               <FaFileDownload />
@@ -129,7 +127,7 @@ const HeroSection = () => {
         <img
           src={personImage}
           alt="Man with laptop"
-          className="hidden md:block absolute  md:left-[8%] md:bottom-[0%] lg:left-[22%] lg:bottom-[0%] ] md:w-[500px]  lg:w-[550px] z-10"
+          className="hidden md:block absolute  md:left-[8%] md:bottom-[0%] lg:left-[32%] lg:bottom-[0%] ] md:w-[500px]  lg:w-[550px] z-10"
         />
       </section>
     </>

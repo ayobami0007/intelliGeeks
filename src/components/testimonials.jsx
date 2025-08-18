@@ -5,55 +5,71 @@ import testImage from '../assets/testimImage.png'
 const testimonials = [
   {
     image: testImage,
-    name: 'Michael Wong',
-    field: 'UI/UX Design Student',
+    name: 'Aisha Bello',
+    field: 'Mobile Development',
     rating: 4.9,
-    text: 'Empower yourself with the knowledge and skills gained through online education! Empower yourself with the knowledge and skills gained through online education!',
+    text: 'IntelliGeeks helped me transition into tech with practical lessons and supportive mentors. I highly recommend it to anyone starting out!',
   },
   {
     image: testImage,
-    name: 'Avril Song',
-    field: 'Web Development Student',
+    name: 'Chinedu Okafor',
+    field: 'Mobile Development',
     rating: 4.8,
-    text: 'Empower yourself with the knowledge and skills gained through online education! Empower yourself with the knowledge and skills gained through online education!',
+    text: 'The hands-on approach and real-world projects made learning mobile development enjoyable. I landed my first job thanks to IntelliGeeks!',
   },
   {
     image: testImage,
-    name: 'Jeane Wood',
-    field: 'Data Science Student',
+    name: 'Fatima Yusuf',
+    field: 'Computational Thinking and Introduction to AI',
     rating: 5.0,
-    text: 'Empower yourself with the knowledge and skills gained through online education! Empower yourself with the knowledge and skills gained through online education!',
+    text: 'The community is amazing and the resources are top-notch. My skills improved greatly after joining IntelliGeeks.',
+  },
+  {
+    image: testImage,
+    name: 'Olufunke Adeyemi',
+    field: 'Parent of Student (Computational Thinking and Introduction to AI)',
+    rating: 5.0,
+    text: 'My son enjoyed every lesson and became more confident in problem-solving. The instructors made learning fun and interactive. I am grateful for the positive impact IntelliGeeks had on him.',
   },
 ];
 
 const StudentTestimonials = () => {
   return (
     <section className="bg-gray-50 px-6 md:px-16 py-20 text-gray-800">
-      <h2 className="text-3xl  text-blue-400 md:text-2xl text-center mb-2">Testimonials</h2>
-      <h2 className="text-3xl font-bold mb-12 md:text-4xl  text-center">Student Testimonials</h2>
+      <h2 className="text-2xl text-blue-500 font-medium mb-2 text-center">Testimonials</h2>
+      <h2 className="text-3xl font-bold mb-12 md:text-4xl text-center">Student/Parents Testimonials</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {testimonials.map((t, i) => (
-          <div key={i} className="bg-white p-6 rounded-lg shadow hover:shadow-md transition">
-            <div className="flex items-center gap-4 mb-2">
-               <img
-              src={t.image}
-              alt={t.name}
-              className="  rounded-t-xl"
-            />
-            <div>
-              <h3 className="font-semibold text-xl">{t.name}</h3>
-            <p className="text-base text-gray-600 italic mb-1">{t.field}</p>
+        {testimonials.map((t, i) => {
+          // Get initials from name
+          const initials = t.name
+            .split(' ')
+            .map(word => word[0])
+            .join('')
+            .toUpperCase();
 
-              <div className="flex items-center gap-1  text-xl">
-                <FaStar  className='text-yellow-500'/>
+            return (
+            <div
+              key={i}
+              className="bg-white p-6 rounded-lg shadow hover:shadow-md transition"
+            >
+              <div className="flex items-center gap-4 mb-2">
+              <div className="w-12 h-12 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 font-bold text-xl p-2">
+                {initials}
+              </div>
+              <div>
+                <h3 className="font-semibold text-xl">{t.name}</h3>
+                <p className="text-base text-gray-600 italic mb-1">{t.field}</p>
+                <div className="flex items-center gap-1 text-xl">
+                <FaStar className="text-yellow-500" />
                 <span>{t.rating}</span>
+                </div>
               </div>
               </div>
+              <p className="text-base text-gray-700 mt-4">{t.text}</p>
             </div>
-            <p className="text-base text-gray-700 mt-4">{t.text}</p>
-          </div>
-        ))}
+            );
+        })}
       </div>
     </section>
   );

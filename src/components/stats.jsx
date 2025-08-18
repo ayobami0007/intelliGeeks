@@ -2,9 +2,9 @@ import React from 'react';
 
 const StatsRow = () => {
   const stats = [
-    { value: '15+', label: 'Years of Experience' },
-    { value: '100k+', label: 'Students Worldwide' },
-    { value: '45+', label: 'Class Subjects' },
+    { value: '6', label: 'Avg. Tutor Experience' },
+    { value: '500+', label: 'Students Worldwide' },
+    { value: '100+', label: 'Satisfied parents' },
     { value: '98%', label: 'Student Satisfaction' },
   ];
 
