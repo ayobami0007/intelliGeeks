@@ -14,16 +14,12 @@ const faqData = [
     question: 'Who would be the instructor for enrolled course?',
     answer: 'All our courses are taught by certified industry professionals.'
   },
-  {
-    question: 'What kind of placement support will be given post completion of program?',
-    answer: 'We offer mock interviews, resume reviews, and job referrals.'
-  }
 ];
 
 const FaqSection = () => {
   return (
     <section className="bg-blue-50 px-6 md:px-16 py-16">
-      <p className="text-center text-blue-600  tracking-wide text-base mb-2 uppercase">
+      <p className="text-center tracking-wide mb-2 text-2xl text-blue-600 font-bold mb-2">
         Ask your questions
       </p>
       <h2 className="text-2xl md:text-[40px] text-gray-900 mb-10 font-bold text-center ">

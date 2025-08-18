@@ -15,7 +15,7 @@ const WhyChooseUs = () => {
   return (
     <section className="bg-gray-50 text-gray-800 px-6 md:px-16 py-20">
       <div className="text-center mb-12">
-        <h5 className="text-2xl text-blue-500 font-medium mb-2">Why Choose Us</h5>
+        <h5 className="text-2xl text-blue-600 font-bold mb-2">Why Choose Us</h5>
         <h2 className="text-4xl md:text-5xl font-bold">Best Learning Experience</h2>
       </div>
 

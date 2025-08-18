@@ -16,7 +16,7 @@ const AboutUs = () => {
           />
         </div>
         <div className="w-full space-y-3 lg:w-1/2 text-center lg:text-left flex flex-col justify-center items-center lg:items-start">
-          <h2  className="text-2xl text-blue-500 font-medium mb-2">About Us</h2>
+          <h2  className="text-2xl text-blue-600 font-bold mb-2">About Us</h2>
           <h3 className="text-[34px] mb-16 font-semibold">
             Training the next generation of world class software and AI engineers
           </h3>

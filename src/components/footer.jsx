@@ -1,32 +1,38 @@
-import React from 'react';
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube, FaEnvelope } from 'react-icons/fa';
-import { useRef } from 'react';
-import emailjs from '@emailjs/browser';
-import { Link } from 'react-router-dom';
-
-
-
-
-
+import React from "react";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedinIn,
+  FaYoutube,
+  FaEnvelope,
+} from "react-icons/fa";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { Link } from "react-router-dom";
+import logo from "../assets/logo.svg";
 
 const Footer = () => {
-
-
-
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-   emailjs.sendForm('service_5whxf7c', 'template_nrlb8e9', form.current, 'EzRvhVIDlYg7kkfK7')
+    emailjs
+      .sendForm(
+        "service_5whxf7c",
+        "template_nrlb8e9",
+        form.current,
+        "EzRvhVIDlYg7kkfK7"
+      )
 
       .then(() => {
-        alert('You have successfully joined!');
-        form.current.reset(); 
+        alert("You have successfully joined!");
+        form.current.reset();
       })
       .catch((error) => {
-        console.error('Email error:', error);
-        alert('There was a problem. Please try again.');
+        console.error("Email error:", error);
+        alert("There was a problem. Please try again.");
       });
   };
 
@@ -65,15 +71,19 @@ const Footer = () => {
       </div>
 
       {/* Main Footer Section */}
-        <div className="flex flex-col md:flex-row text-white px-6 md:px-16 py-16 bg-blue-700 w-full gap-10 md:gap-20 justify-between">
-          <div className="md:w-1/2">
-            
-            <p className="text-xl md:text-2xl text-white/80 leading-relaxed">
-              Empower Your Tech Journey with IntelliGeeks! <br />
-            </p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 w-full">
-            {/* Quick Links */}
+      <div className="flex flex-col md:flex-row text-white px-6 md:px-16 py-16 bg-blue-700 w-full gap-10 md:gap-20 justify-between">
+        <div className="md:w-1/2 flex flex-col items-center text-center">
+          <Link to="/">
+            <img src={logo} alt="IntelliGeeks Logo" className="h-20 w-auto mb-6" />
+          </Link>
+
+          <p className="text-xl md:text-1xl text-white/80 leading-relaxed">
+            Empower Your Tech Journey with IntelliGeeks! <br />
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 w-full">
+          {/* Quick Links */}
           <div>
             <h4 className="text-2xl font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-lg md:text-xl text-white/80">
@@ -83,8 +93,12 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/" state={{ scrollTo: 'our-class' }} className="hover:underline">
-                  Our Class
+                <Link
+                  to="/"
+                  state={{ scrollTo: "our-class" }}
+                  className="hover:underline"
+                >
+                  Courses
                 </Link>
               </li>
               <li>
@@ -119,19 +133,49 @@ const Footer = () => {
           <div>
             <h4 className="text-2xl font-semibold mb-4">Social Media</h4>
             <div className="flex gap-4 text-2xl md:text-3xl">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hover:text-gray-300">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="hover:text-gray-300"
+              >
                 <FaFacebookF />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="hover:text-gray-300">
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter"
+                className="hover:text-gray-300"
+              >
                 <FaTwitter />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-gray-300">
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="hover:text-gray-300"
+              >
                 <FaInstagram />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-gray-300">
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="hover:text-gray-300"
+              >
                 <FaLinkedinIn />
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="hover:text-gray-300">
+              <a
+                href="https://youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+                className="hover:text-gray-300"
+              >
                 <FaYoutube />
               </a>
             </div>

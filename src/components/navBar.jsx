@@ -25,7 +25,7 @@ const Navbar = () => {
         state={{ scrollTo: 'our-class' }}
         onClick={() => setMenuOpen(false)}
         >
-        Our Class
+        Courses
         </Link>
       </li>
       <li>
@@ -54,7 +54,7 @@ const Navbar = () => {
           state={{ scrollTo: 'our-class' }}
           onClick={() => setMenuOpen(false)}
         >
-          Our Class
+          Courses
         </Link>
         </li>
         <li>

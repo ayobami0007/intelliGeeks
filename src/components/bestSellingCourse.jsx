@@ -56,7 +56,7 @@ const BestSellingCourses = () => {
 
   return (
     <section className="bg-white px-6 md:px-16 py-14 text-gray-800" id="our-class">
-      <h2  className="text-2xl text-blue-500 font-medium mb-2 text-center"> Our Courses</h2>
+      <h2  className="text-2xl text-blue-600 font-bold mb-2 text-center"> Our Courses</h2>
       <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-blue-400 ">Best Selling Courses</h2>
 
       {/* Category  */}
