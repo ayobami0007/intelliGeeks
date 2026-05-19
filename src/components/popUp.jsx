@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import adImage from "../assets/ad.jpeg"; 
+import adImage from "../assets/ad.webp"; 
 
 const popUp = () => {
   const [showPopUp, setShowPopUp] = useState(false);
@@ -36,13 +36,19 @@ const popUp = () => {
         >
           ×
         </button>
-        <img src={adImage} alt="Advertisement" className="w-200 h-200 object-contain rounded-lg" />
+        <img src={adImage} alt="Advertisement" className="w-200 h-200 object-contain rounded-lg" loading="lazy" />
         <div className="my-4 text-2xl font-semibold">
-          Unlock Your Child’s Potential!
+          Train Your Child to be an AI Engineer!
         </div>
+        <p className="text-lg text-gray-600 mb-2">
+          Elite program for ages 12-18 • Only 20 students per cohort
+        </p>
+        <p className="text-base text-gray-600 mb-4">
+          ₦200k investment • 95% Attendance = 10% Cashback • Top student gets 100% refund
+        </p>
         <button
           onClick={goToContact}
-          className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded transition text-xl font-normal"
+          className="bg-[#0d1b6e] hover:bg-[#0d1b6e] text-white px-6 py-2 rounded transition text-xl font-normal"
         >
           Get Started
         </button>

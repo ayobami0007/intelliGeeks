@@ -10,11 +10,11 @@ const FaqItem = ({ question, answer }) => {
       <button
         onClick={() => setOpen(!open)}
         className={`w-full flex items-center justify-between px-5 py-4 text-left transition ${
-          open ? "bg-blue-50 text-blue-700" : "text-gray-800 hover:bg-gray-50"
+          open ? "bg-blue-50 text-[#0d1b6e]" : "text-gray-800 hover:bg-gray-50"
         }`}
       >
         <span className="text-base md:text-lg font-medium">{question}</span>
-        <span className="text-blue-600 text-lg">
+        <span className="text-[#0d1b6e] text-lg">
           {open ? <FaMinus /> : <FaPlus />}
         </span>
       </button>

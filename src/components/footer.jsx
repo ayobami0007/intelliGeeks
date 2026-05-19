@@ -1,19 +1,17 @@
 import React from "react";
 import {
   FaFacebookF,
-  FaTwitter,
-  FaInstagram,
   FaLinkedinIn,
-  FaYoutube,
   FaEnvelope,
 } from "react-icons/fa";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../assets/logo.svg";
 
 const Footer = () => {
   const form = useRef();
+  const navigate = useNavigate();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -34,6 +32,11 @@ const Footer = () => {
         console.error("Email error:", error);
         alert("There was a problem. Please try again.");
       });
+  };
+
+  const handleLinkClick = (path) => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    navigate(path);
   };
 
   return (
@@ -62,23 +65,24 @@ const Footer = () => {
           </div>
           <button
             type="submit"
-            className="bg-blue-600 hover:bg-blue-700 text-base md:text-lg font-medium text-white px-4 py-2 rounded-sm transition-all duration-200"
+            className="bg-[#0d1b6e] hover:bg-[#0d1b6e] text-base md:text-md font-medium text-white px-4 py-2 rounded-md transition-all duration-200"
             aria-label="Join newsletter"
           >
-            Join now
+            Join
           </button>
         </form>
       </div>
 
       {/* Main Footer Section */}
-      <div className="flex flex-col md:flex-row text-white px-6 md:px-16 py-16 bg-blue-700 w-full gap-10 md:gap-20 justify-between">
+      <div className="flex flex-col md:flex-row text-white px-6 md:px-16 py-16 bg-[#0d1b6e] w-full gap-10 md:gap-20 justify-between">
         <div className="md:w-1/2 flex flex-col items-center text-center">
-          <Link to="/">
+          <button onClick={() => handleLinkClick('/')} className="cursor-pointer">
             <img src={logo} alt="IntelliGeeks Logo" className="h-20 w-auto mb-6" />
-          </Link>
+          </button>
 
           <p className="text-xl md:text-1xl text-white/80 leading-relaxed">
-            Empower Your Tech Journey with IntelliGeeks! <br />
+            Training the Next Generation of AI & Software Engineers (Ages 12-18) <br />
+            Elite cohorts • Expert instructors (2:1+) • 3-month intensive program
           </p>
         </div>
 
@@ -88,23 +92,24 @@ const Footer = () => {
             <h4 className="text-2xl font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-lg md:text-xl text-white/80">
               <li>
-                <Link to="/about" className="hover:underline">
+                <button onClick={() => handleLinkClick('/about')} className="hover:underline cursor-pointer text-left">
                   About us
-                </Link>
+                </button>
               </li>
               <li>
-                <Link
-                  to="/"
-                  state={{ scrollTo: "our-class" }}
-                  className="hover:underline"
-                >
-                  Courses
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" className="hover:underline">
+                <button onClick={() => handleLinkClick('/contact')} className="hover:underline cursor-pointer text-left">
                   Contact
-                </Link>
+                </button>
+              </li>
+              <li>
+                <button onClick={() => handleLinkClick('/other-programs')} className="hover:underline cursor-pointer text-left">
+                  Other Programmes
+                </button>
+              </li>
+              <li>
+                <button onClick={() => handleLinkClick('/junior-geeks')} className="hover:underline cursor-pointer text-left">
+                  Junior Geeks Club
+                </button>
               </li>
             </ul>
           </div>
@@ -113,19 +118,19 @@ const Footer = () => {
             <h4 className="text-2xl font-semibold mb-4">Resources</h4>
             <ul className="space-y-2 text-lg md:text-xl text-white/80">
               <li>
-                <a href="#" className="hover:underline">
-                  Support
-                </a>
+                <button onClick={() => handleLinkClick('/blog')} className="hover:underline cursor-pointer text-left">
+                  Blog
+                </button>
               </li>
               <li>
-                <Link to="/privacy" className="hover:underline">
+                <button onClick={() => handleLinkClick('/privacy')} className="hover:underline cursor-pointer text-left">
                   Privacy Policy
-                </Link>
+                </button>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <button onClick={() => handleLinkClick('/terms')} className="hover:underline cursor-pointer text-left">
                   Terms & Conditions
-                </a>
+                </button>
               </li>
             </ul>
           </div>
@@ -134,7 +139,7 @@ const Footer = () => {
             <h4 className="text-2xl font-semibold mb-4">Social Media</h4>
             <div className="flex gap-4 text-2xl md:text-3xl">
               <a
-                href="https://facebook.com"
+                href="https://web.facebook.com/profile.php?id=61576986857849"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
@@ -143,40 +148,13 @@ const Footer = () => {
                 <FaFacebookF />
               </a>
               <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Twitter"
-                className="hover:text-gray-300"
-              >
-                <FaTwitter />
-              </a>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                className="hover:text-gray-300"
-              >
-                <FaInstagram />
-              </a>
-              <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/intelligeeks"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
                 className="hover:text-gray-300"
               >
                 <FaLinkedinIn />
-              </a>
-              <a
-                href="https://youtube.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="YouTube"
-                className="hover:text-gray-300"
-              >
-                <FaYoutube />
               </a>
             </div>
           </div>
