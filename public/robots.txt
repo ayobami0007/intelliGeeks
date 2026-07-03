@@ -1,0 +1,36 @@
+# IntelliGeeks robots.txt
+# Allow all search engines to crawl the site
+
+User-agent: *
+Allow: /
+
+# Disallow crawling of dashboard and private pages
+Disallow: /parent-dashboard
+Disallow: /student-dashboard
+Disallow: /assessment/
+Disallow: /payment/
+Disallow: /payment-success
+Disallow: /schedule/
+
+# Disallow crawling of Firebase hosting cache
+Disallow: /.firebase/
+
+# Allow crawling of important pages
+Allow: /
+Allow: /about
+Allow: /contact
+Allow: /careers
+Allow: /privacy
+Allow: /terms
+Allow: /signup
+Allow: /signin
+Allow: /blog
+Allow: /blog/
+Allow: /junior-geeks
+Allow: /other-programs
+
+# Sitemap location
+Sitemap: https://intelligeeksafrica.com/sitemap.xml
+
+# Crawl-delay for polite crawling (optional)
+Crawl-delay: 1

@@ -14,10 +14,10 @@
 //     </p>
 
 //     <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-//       <button className="bg-[#2545F5] text-white px-6 py-3 rounded-md hover:bg-blue-700 transition">
+//       <button className="bg-[#0d1b6e] text-white px-6 py-3 rounded-md hover:bg-[#0d1b6e] transition">
 //         Start learning
 //       </button>
-//       <button className="border border-[#2545F5] text-[#2545F5] px-6 py-3 rounded-md hover:bg-[#2545F5] hover:text-white transition">
+//       <button className="border border-[#0d1b6e] text-[#0d1b6e] px-6 py-3 rounded-md hover:bg-[#0d1b6e] hover:text-white transition">
 //         Learn more
 //       </button>
 //     </div>
@@ -85,15 +85,15 @@ const Hero = () => {
             <img src={student3} alt="student" className="w-6 h-6 rounded-full border-2 border-white" />
             <img src={student4} alt="student" className="w-6 h-6 rounded-full border-2 border-white" />
           </div>
-          <span className="text-sm text-[#2545F5] font-semibold">900+ Total students</span>
+          <span className="text-sm text-[#0d1b6e] font-semibold">900+ Total students</span>
         </div>
 
  
         <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-          <button className="bg-[#2545F5] text-white px-12 py-3 rounded-md hover:bg-blue-700 transition">
+          <button className="bg-[#0d1b6e] text-white px-12 py-3 rounded-md hover:bg-[#0d1b6e] transition">
             Start learning
           </button>
-          <button className="border border-[#2545F5] text-[#2545F5] px-12 py-3 rounded-md hover:bg-[#2545F5] hover:text-white transition">
+          <button className="border border-[#0d1b6e] text-[#0d1b6e] px-12 py-3 rounded-md hover:bg-[#0d1b6e] hover:text-white transition">
             Learn more
           </button>
         </div>
