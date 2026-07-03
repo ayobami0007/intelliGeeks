@@ -21,8 +21,13 @@ Allow: /about
 Allow: /contact
 Allow: /careers
 Allow: /privacy
+Allow: /terms
 Allow: /signup
 Allow: /signin
+Allow: /blog
+Allow: /blog/
+Allow: /junior-geeks
+Allow: /other-programs
 
 # Sitemap location
 Sitemap: https://intelligeeksafrica.com/sitemap.xml

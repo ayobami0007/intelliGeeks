@@ -177,7 +177,7 @@ Spots are strictly limited to 20 students per cohort. Once they are filled, enro
 
 To secure your child's place:
 
-1. Visit **[intelligeeksafrica.com](https://intelligeeksafrica.com)** or reach us on WhatsApp at **+234 802 533 4598**
+1. Visit **[intelligeeksafrica.com](https://intelligeeksafrica.com)** or reach us on WhatsApp at **+234 911 261 2877**
 2. Submit a brief interest form — it takes less than two minutes
 3. Receive a short, friendly assessment call to understand your child's interests
 4. Confirm enrolment and arrange payment
@@ -197,4 +197,4 @@ We would be honoured to be part of their story.
 
 *IntelliGeeks — Building Tomorrow's Innovators Today*
 
-*For enquiries: info@intelligeeksafrica.com | WhatsApp: +234 802 533 4598*
+*For enquiries: info@intelligeeksafrica.com | WhatsApp: +234 911 261 2877*

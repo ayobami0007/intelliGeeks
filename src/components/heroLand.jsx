@@ -64,8 +64,8 @@ const HeroSection = () => {
 
           {/* Headline */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.05] tracking-tight mb-6 max-w-4xl">
-            Your Child Could Be Building
-            <span className="block mt-2 text-yellow-300">AI. We Make It Happen.</span>
+            We Turn Curious Teens
+            <span className="block mt-2 text-yellow-300">Into AI Engineers.</span>
           </h1>
 
           {/* Sub */}

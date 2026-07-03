@@ -53,8 +53,9 @@ export default function OtherPrograms() {
   return (
     <>
       <SEO
-        title="Other Programs | IntelliGeeks"
-        description="Terminal Class Weekday Programme for JSS3 and SS3 students, and private one-on-one tutoring with custom scheduling and pricing."
+        title="Other Programs — Terminal Class & Private Tutoring | IntelliGeeks Ilorin"
+        description="Weekday AI and coding programme for JSS3 and SS3 students on study break, plus private one-on-one tutoring in Ilorin, Nigeria. Flexible schedules and custom pricing."
+        keywords="terminal class programme Ilorin, coding for JSS3 students Nigeria, SS3 coding class Ilorin, private AI tutoring Nigeria, one on one coding Ilorin, tech programmes Kwara"
       />
       <Navbar />
 

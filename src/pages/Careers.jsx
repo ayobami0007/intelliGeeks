@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import NavBar from '../components/navBar.jsx';
 import Footer from '../components/footer.jsx';
+import SEO from '../components/SEO';
 import { FaSpinner } from 'react-icons/fa';
 import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, addDoc } from 'firebase/firestore';
@@ -81,6 +82,11 @@ const Careers = () => {
 
   return (
     <div>
+      <SEO
+        title="Careers — Teach AI at IntelliGeeks Ilorin, Nigeria"
+        description="Join IntelliGeeks as an AI and software engineering instructor. We're looking for first-class CS graduates with 3+ years experience to teach teens in Ilorin, Nigeria. Apply now."
+        keywords="tech jobs Ilorin, software engineering instructor Nigeria, AI teacher Ilorin, teach coding Nigeria, careers IntelliGeeks"
+      />
       <NavBar />
 
       {/* Hero Section */}
@@ -200,7 +206,7 @@ const Careers = () => {
                 <input
                   name="phone"
                   type="tel"
-                  placeholder="+234 802 533 4598"
+                  placeholder="+234 911 261 2877"
                   className="border border-gray-300 rounded px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
                   required
                 />

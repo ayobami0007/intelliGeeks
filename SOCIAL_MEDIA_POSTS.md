@@ -46,7 +46,7 @@
 > We start from the very beginning. No experience required. Ages 12 to 18.
 > If your child is interested, that is enough for us to work with.
 >
-> 📲 +234 802 533 4598
+> 📲 +234 911 261 2877
 >
 > #IntelliGeeks #NigerianParents
 
@@ -291,7 +291,7 @@
 >
 > If you want your child to spend three months learning something genuinely useful — something they can build on for years — we think IntelliGeeks is worth a conversation.
 >
-> 📲 +234 802 533 4598
+> 📲 +234 911 261 2877
 >
 > #IntelliGeeks #FutureBuilders #TechForKids
 

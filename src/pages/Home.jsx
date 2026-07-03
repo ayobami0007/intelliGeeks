@@ -34,14 +34,14 @@ const Home = () => {
   return (
     <div>
       <SEO
-        title="AI & Computational Thinking Education for Ages 12-18"
-        description={`World-class AI and computational thinking education for young learners aged 12-18. Taught by first-class CS graduates with proven AI/ML experience. 3-month intensive program starting ${CURRENT_COHORT}. Enroll now!`}
-        keywords="AI education Nigeria, computational thinking, coding classes for kids, machine learning courses, software engineering for teens, tech education Lagos, coding bootcamp Nigeria, STEM education"
+        title="AI School in Ilorin Nigeria | Learn AI & Computational Thinking for Kids"
+        description={`The #1 AI school in Ilorin, Nigeria. Your child learns computational thinking, AI, and software engineering in a 12-week intensive program. Expert instructors, real projects, small cohorts. Enrolling for ${CURRENT_COHORT}!`}
+        keywords="AI school Ilorin, AI school Nigeria, learn AI Ilorin, learn AI Nigeria, learn AI for kids, computational thinking Ilorin, coding classes for kids Nigeria, software engineering for teens, AI education teenagers, tech school Ilorin, STEM Kwara State, AI training Nigeria"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "WebPage",
-          "name": "IntelliGeeks - Home",
-          "description": "World-class AI and computational thinking education for young learners",
+          "name": "IntelliGeeks - AI School in Ilorin, Nigeria",
+          "description": "The #1 AI school in Ilorin. Computational thinking, AI, and software engineering for teens aged 12-18.",
           "url": "https://intelligeeksafrica.com/"
         }}
       />

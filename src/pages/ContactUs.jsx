@@ -171,7 +171,7 @@ useEffect(()=>{
                   </div>
                   <div>
                     <p className="text-sm text-gray-600">Phone / WhatsApp</p>
-                    <p className="font-semibold text-gray-900">+234 802 533 4598</p>
+                    <p className="font-semibold text-gray-900">+234 911 261 2877</p>
                   </div>
                 </div>
               </div>
@@ -220,7 +220,7 @@ useEffect(()=>{
               <div className="w-full bg-[#f5f7ff] rounded-xl p-4 text-center">
                 <p className="text-xs text-gray-500 mb-1">Prefer email or a call?</p>
                 <p className="text-sm font-semibold text-[#0d1b6e]">info@intelligeeksafrica.com</p>
-                <p className="text-sm font-semibold text-[#0d1b6e]">+234 802 533 4598</p>
+                <p className="text-sm font-semibold text-[#0d1b6e]">+234 911 261 2877</p>
               </div>
             </div>
           </div>

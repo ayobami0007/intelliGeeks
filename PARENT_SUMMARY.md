@@ -78,10 +78,6 @@ At IntelliGeeks, **we do not accept average.** Every instructor on our team hold
 
 **Tajudeen Nurudeen** — our Lead Instructor and Programme Director — holds a First Class degree in Computer Science, is completing a postgraduate degree in AI, and has spent over 7 years building AI-powered solutions at the professional level. He did not design this curriculum from a textbook. He designed it from experience — from the inside of the industry.
 
-**Emmanuel Ogunwede** — Senior Data Engineer with over 8 years of experience building data platforms for global companies. He has personally mentored over 300 students into careers in data and software engineering.
-
-**Haroon Abdulrazaq** — Senior Software Engineer with 7+ years of experience delivering high-impact technology solutions across the insurance and healthcare industries.
-
 Research is clear on this: **children do not rise above the quality of their teachers.** When a child is taught by someone who has genuinely lived and worked in their field, the learning is deeper, the examples are real, and the inspiration is unmistakable. That is the standard we hold ourselves to at IntelliGeeks — and it is a standard we will never compromise.
 
 ---
@@ -212,5 +208,5 @@ We encourage you to act early — not out of pressure, but because your child's 
 
 **To enrol or ask any questions:**
 - Visit: [www.intelligeeksafrica.com](https://intelligeeksafrica.com)
-- WhatsApp: +234 802 533 4598
+- WhatsApp: +234 911 261 2877
 - Email: info@intelligeeksafrica.com

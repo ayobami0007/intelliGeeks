@@ -696,11 +696,6 @@ All IntelliGeeks instructors meet the following criteria:
 - Built world-class data platforms at global companies
 - Mentored 300+ students into data and software engineering
 
-**Haroon Abdulrazaq - Instructor**
-- Senior Software Engineer with 7+ years experience
-- Delivered high-impact solutions for insurance and healthcare
-- Expert in embedding intelligent systems into large-scale platforms
-
 ---
 
 ## Program Resources

@@ -13,14 +13,14 @@ const AboutUs = () => {
   return (
     <div>
       <SEO
-        title="About Us - Elite AI Education for Young Minds"
-        description="Learn about IntelliGeeks' mission to provide world-class AI and computational thinking education. Small cohorts of 20 students, taught by first-class CS graduates with 2:1+ degrees. 3-month intensive program for ages 12-18."
-        keywords="about intelligeeks, AI education company, tech education Nigeria, CS graduates, elite education, STEM learning"
+        title="About IntelliGeeks — AI School in Ilorin, Nigeria"
+        description="IntelliGeeks is the leading AI school in Ilorin, Nigeria. We teach computational thinking, AI, and software engineering to teens aged 12-18. Small cohorts of 20 students, taught by first-class CS graduates. Learn about our mission."
+        keywords="about IntelliGeeks, AI school Ilorin, AI education Nigeria, computational thinking school Kwara, tech education Ilorin, elite AI school Nigeria"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "AboutPage",
-          "name": "About IntelliGeeks",
-          "description": "Elite AI & Software Engineering Education for students aged 12-18"
+          "name": "About IntelliGeeks — AI School in Ilorin, Nigeria",
+          "description": "The leading AI school in Ilorin. We teach computational thinking, AI, and software engineering to teens aged 12-18."
         }}
       />
       <Navbar />

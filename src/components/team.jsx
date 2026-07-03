@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import { FaLinkedin, FaGlobe } from 'react-icons/fa';
 import nurImage from '../assets/team/nur.webp';
-//import emmaImage from '../assets/team/emma_dp.webp';
-import haroonImg from '../assets/team/haroon.webp';
 
 
 const teamMembers = [
@@ -13,14 +11,6 @@ const teamMembers = [
     image: nurImage,
     website: 'https://tajudeennurudeen.com',
     linkedIn: 'https://linkedin.com/in/tajudeennurudeen',
-  },
-  {
-    name: 'Haroon Abdulrazaq',
-    role: 'Instructor',
-    desc: 'Senior Software Engineer with 7+ years of experience delivering high-impact software solutions for insurance organizations and embedding intelligent systems into large-scale EHR platforms.',
-    image: haroonImg,
-    website: '',
-    linkedIn: 'https://www.linkedin.com/in/haroonabdulrazaq/',
   },
 ];
 

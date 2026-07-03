@@ -1,6 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaStar } from 'react-icons/fa';
 import testImage from '../assets/testimImage.png'
+
+const CHAR_LIMIT = 180;
+
+const TestimonialCard = ({ t }) => {
+  const [expanded, setExpanded] = useState(false);
+  const initials = t.name.split(' ').map(w => w[0]).join('').substring(0, 2).toUpperCase();
+  const isLong = t.text.length > CHAR_LIMIT;
+  const displayed = !expanded && isLong ? t.text.slice(0, CHAR_LIMIT).trimEnd() + '…' : t.text;
+
+  return (
+    <div className="bg-white p-6 rounded-lg shadow hover:shadow-md transition flex flex-col">
+      <div className="flex items-center gap-4 mb-2">
+        <div className="w-12 h-12 flex items-center justify-center rounded-full bg-blue-100 text-[#0d1b6e] font-bold text-xl p-2 flex-shrink-0">
+          {initials}
+        </div>
+        <div>
+          <h3 className="font-semibold text-xl">{t.name}</h3>
+          <p className="text-base text-gray-600 italic mb-1">{t.field}</p>
+          <div className="flex items-center gap-1">
+            {[...Array(5)].map((_, i) => <FaStar key={i} className="text-yellow-500" />)}
+          </div>
+        </div>
+      </div>
+      <p className="text-base text-gray-700 mt-4 flex-1">{displayed}</p>
+      {isLong && (
+        <button
+          onClick={() => setExpanded(e => !e)}
+          className="mt-3 text-sm font-semibold text-[#0d1b6e] hover:underline self-start"
+        >
+          {expanded ? 'Show less' : 'Read more'}
+        </button>
+      )}
+    </div>
+  );
+};
 
 const testimonials = [
    {
@@ -65,37 +100,7 @@ const StudentTestimonials = () => {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {testimonials.map((t, i) => {
-          // Get initials from name
-          const initials = t.name
-            .split(' ')
-            .map(word => word[0])
-            .join('').substring(0, 2)
-            .toUpperCase();
-
-            return (
-            <div
-              key={i}
-              className="bg-white p-6 rounded-lg shadow hover:shadow-md transition"
-            >
-              <div className="flex items-center gap-4 mb-2">
-              <div className="w-12 h-12 flex items-center justify-center rounded-full bg-blue-100 text-[#0d1b6e] font-bold text-xl p-2">
-                {initials}
-              </div>
-              <div>
-                <h3 className="font-semibold text-xl">{t.name}</h3>
-                <p className="text-base text-gray-600 italic mb-1">{t.field}</p>
-                <div className="flex items-center gap-1">
-                  {[...Array(5)].map((_, index) => (
-                    <FaStar key={index} className="text-yellow-500" />
-                  ))}
-                </div>
-              </div>
-              </div>
-              <p className="text-base text-gray-700 mt-4">{t.text}</p>
-            </div>
-            );
-        })}
+        {testimonials.map((t, i) => <TestimonialCard key={i} t={t} />)}
       </div>
     </section>
   );
