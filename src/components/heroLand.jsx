@@ -14,7 +14,7 @@ const HeroSection = () => {
         <div className="grid grid-cols-2 md:flex md:justify-between items-center gap-y-2.5 gap-x-4 md:gap-6 text-xs font-medium max-w-screen-xl mx-auto">
           {[
             { icon: FaCertificate, color: "text-yellow-400", text: "Certified Curriculum" },
-            { icon: FaUserGraduate, color: "text-green-400", text: "Max 20 Students Per Cohort" },
+            { icon: FaUserGraduate, color: "text-green-400", text: "Max 10 Students Per Cohort" },
             { icon: FaChalkboardTeacher, color: "text-yellow-400", text: "Mentorship from Elite Instructors" },
             { icon: FaCalendarAlt, color: "text-green-400", text: `Next Cohort: ${CURRENT_COHORT}` },
           ].map(({ icon: Icon, color, text }, i, arr) => (
@@ -119,7 +119,7 @@ const HeroSection = () => {
               { value: "12 Weeks", label: "Intensive programme" },
               { value: "Ages 12–18", label: "Who it's for" },
               { value: "₦200,000", label: "All-inclusive fee" },
-              { value: "20 Students", label: "Max per cohort" },
+              { value: "10 Students", label: "Max per cohort" },
             ].map(({ value, label }) => (
               <div key={label} className="text-center">
                 <p className="text-lg md:text-xl font-extrabold text-white">{value}</p>

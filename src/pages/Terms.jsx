@@ -67,7 +67,7 @@ const Terms = () => {
                 <li>Three (3) live sessions per week (Monday, Wednesday, Friday)</li>
                 <li>Access to course materials, recordings, and resources</li>
                 <li>Expert instruction from CS graduates with 2:1+ degrees</li>
-                <li>Limited cohort size of 20 students maximum</li>
+                <li>Limited cohort size of 10 students maximum</li>
                 <li>Certificate of completion upon successful program completion</li>
               </ul>
 

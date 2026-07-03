@@ -13,7 +13,7 @@ const cards = [
   {
     icon: FaUsers,
     title: 'Exclusive Small Classes',
-    desc: 'Limited to just 20 students per cohort, ensuring personalized mentorship and maximum learning impact.',
+    desc: 'Limited to just 10 students per cohort, ensuring personalized mentorship and maximum learning impact.',
     color: 'from-green-500 to-emerald-600'
   },
   {

@@ -14,7 +14,7 @@ const AboutUs = () => {
     <div>
       <SEO
         title="About IntelliGeeks — AI School in Ilorin, Nigeria"
-        description="IntelliGeeks is the leading AI school in Ilorin, Nigeria. We teach computational thinking, AI, and software engineering to teens aged 12-18. Small cohorts of 20 students, taught by first-class CS graduates. Learn about our mission."
+        description="IntelliGeeks is the leading AI school in Ilorin, Nigeria. We teach computational thinking, AI, and software engineering to teens aged 12-18. Small cohorts of 10 students, taught by first-class CS graduates. Learn about our mission."
         keywords="about IntelliGeeks, AI school Ilorin, AI education Nigeria, computational thinking school Kwara, tech education Ilorin, elite AI school Nigeria"
         structuredData={{
           "@context": "https://schema.org",
@@ -54,7 +54,7 @@ const AboutUs = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
               <FaUsers className="text-4xl text-yellow-400 mb-2 mx-auto" />
-              <p className="text-3xl font-bold">20</p>
+              <p className="text-3xl font-bold">10</p>
               <p className="text-sm text-blue-200">Students Per Cohort</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
@@ -115,7 +115,7 @@ const AboutUs = () => {
                   At IntelliGeeks, we're on a mission to transform how young people learn technology. Our elite program is designed exclusively for students aged 12-18, providing them with industry-level training in AI and software engineering—skills that will define their future.
                 </p>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  We believe in quality over quantity. That's why we limit each cohort to just 20 students, ensuring every learner receives personalized mentorship and support from our team of expert CS graduates.
+                  We believe in quality over quantity. That's why we limit each cohort to just 10 students, ensuring every learner receives personalized mentorship and support from our team of expert CS graduates.
                 </p>
               </div>
 
@@ -160,7 +160,7 @@ const AboutUs = () => {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Highly Selective</h3>
               <p className="text-gray-600">
-                Only 20 students per cohort, ensuring personalized attention and exceptional results for every learner.
+                Only 10 students per cohort, ensuring personalized attention and exceptional results for every learner.
               </p>
             </div>
 

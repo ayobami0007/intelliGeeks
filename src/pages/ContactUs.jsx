@@ -56,7 +56,7 @@ useEffect(()=>{
           </h1>
 
           <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto">
-            Only <strong className="text-white">20 seats available</strong> per cohort. Don't miss this opportunity to give your child world-class AI and software engineering training.
+            Only <strong className="text-white">10 seats available</strong> per cohort. Don't miss this opportunity to give your child world-class AI and software engineering training.
           </p>
 
           <div className="flex flex-wrap justify-center gap-8 mt-12">
@@ -71,7 +71,7 @@ useEffect(()=>{
               <FaUsers className="text-green-400 text-2xl" />
               <div className="text-left">
                 <p className="text-sm text-blue-200">Class Size</p>
-                <p className="font-bold text-lg">20 Students Max</p>
+                <p className="font-bold text-lg">10 Students Max</p>
               </div>
             </div>
             <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm px-6 py-4 rounded-xl border border-white/20">
@@ -116,7 +116,7 @@ useEffect(()=>{
                 <div className="flex items-start gap-3 bg-white p-4 rounded-xl shadow-md border border-blue-100">
                   <FaCheckCircle className="text-green-500 text-xl mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-bold text-gray-900">Only 20 Students Per Cohort</h4>
+                    <h4 className="font-bold text-gray-900">Only 10 Students Per Cohort</h4>
                     <p className="text-sm text-gray-600">Personalized attention and mentorship</p>
                   </div>
                 </div>

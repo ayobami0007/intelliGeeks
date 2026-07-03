@@ -41,7 +41,7 @@ const popUp = () => {
           Train Your Child to be an AI Engineer!
         </div>
         <p className="text-lg text-gray-600 mb-2">
-          Elite program for ages 12-18 • Only 20 students per cohort
+          Elite program for ages 12-18 • Only 10 students per cohort
         </p>
         <p className="text-base text-gray-600 mb-4">
           ₦200k investment • 95% Attendance = 10% Cashback • Top student gets 100% refund

@@ -45,7 +45,7 @@ const AboutUs = () => {
 
             {/* Description */}
             <p className="text-lg text-gray-700 leading-relaxed">
-              We train kids aged <span className="font-bold text-[#0d1b6e]">12-18</span> to become AI and software engineering professionals. With only <span className="font-bold text-[#0d1b6e]">20 students per cohort</span>, every child receives personalized attention and mentorship.
+              We train kids aged <span className="font-bold text-[#0d1b6e]">12-18</span> to become AI and software engineering professionals. With only <span className="font-bold text-[#0d1b6e]">10 students per cohort</span>, every child receives personalized attention and mentorship.
             </p>
 
             {/* Key Features Grid */}
@@ -86,7 +86,7 @@ const AboutUs = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900 mb-1">Small Classes</h4>
-                  <p className="text-sm text-gray-600">Maximum 20 students per cohort</p>
+                  <p className="text-sm text-gray-600">Maximum 10 students per cohort</p>
                 </div>
               </div>
             </div>

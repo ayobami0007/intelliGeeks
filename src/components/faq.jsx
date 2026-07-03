@@ -12,7 +12,7 @@ const faqData = [
   },
   {
     question: 'How many students per class?',
-    answer: 'Just 20 students per cohort. Small classes = personalized attention and better results.'
+    answer: 'Just 10 students per cohort. Small classes = personalized attention and better results.'
   },
   {
     question: 'Who teaches the program?',
